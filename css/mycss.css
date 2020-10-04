@@ -1,0 +1,267 @@
+/* 鼠标样式 */
+body {
+    cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/default.cur),
+        default;
+}
+a,
+img {
+    cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/pointer.cur),
+        default;
+}
+
+/* 页脚footer */
+/* 渐变色滚动动画 */
+@-webkit-keyframes Gradient {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+@-moz-keyframes Gradient {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
+#footer {
+    background: linear-gradient(-45deg, #ee7752, #ce3e75, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 10s ease infinite;
+    -moz-animation: Gradient 10s ease infinite;
+    animation: Gradient 10s ease infinite;
+    -o-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+#footer:before {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+/* 滚动条 */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: rgba(73, 177, 245, 0.2);
+    border-radius: 2em;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #49b1f5;
+    background-image: -webkit-linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.4) 25%,
+      transparent 25%,
+      transparent 50%,
+      rgba(255, 255, 255, 0.4) 50%,
+      rgba(255, 255, 255, 0.4) 75%,
+      transparent 75%,
+      transparent
+    );
+    border-radius: 2em;
+  }
+  
+  ::-webkit-scrollbar-corner {
+    background-color: transparent;
+  }
+  
+  ::-moz-selection {
+    color: #fff;
+    background-color: #49b1f5;
+  }
+
+
+/* 阿里图标 */
+@font-face {font-family: "iconfont";
+    src: url('//at.alicdn.com/t/font_1924090_lt18yyhjud.eot?t=1601716350577'); /* IE9 */
+    src: url('//at.alicdn.com/t/font_1924090_lt18yyhjud.eot?t=1601716350577#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('data:application/x-font-woff2;charset=utf-8;base64,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') format('woff2'),
+    url('//at.alicdn.com/t/font_1924090_lt18yyhjud.woff?t=1601716350577') format('woff'),
+    url('//at.alicdn.com/t/font_1924090_lt18yyhjud.ttf?t=1601716350577') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url('//at.alicdn.com/t/font_1924090_lt18yyhjud.svg?t=1601716350577#iconfont') format('svg'); /* iOS 4.1- */
+  }
+  
+  .iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-fenlei:before {
+    content: "\e606";
+    color: #49b1f5;
+  }
+  
+  .icon-zhihu:before {
+    content: "\e69a";
+    color: #49b1f5;
+  }
+  
+  .icon-guanyu1:before {
+    content: "\e637";
+    color: #49b1f5;
+  }
+  
+  .icon-shouye1:before {
+    content: "\e618";
+    color: #f10d19;
+  }
+  
+  .icon-liebiao:before {
+    content: "\e602";
+    color: #40f10a;
+  }
+  
+  .icon-lianjie:before {
+    content: "\e6c4";
+    color: #d0f30d;
+  }
+  
+  .icon-gitee-fill-round:before {
+    content: "\e686";
+    color: #ff0000;
+  }
+  
+  .icon-rss:before {
+    content: "\e690";
+    color: #0eb1f1;
+  }
+  
+  .icon-bilibili:before {
+    content: "\e658";
+    color: #f812e5;
+  }
+  
+  .icon-github:before {
+    content: "\e612";
+    color: #000407;
+  }
+  
+  .icon-umidd17:before {
+    content: "\e603";
+    color: #49b1f5;
+  }
+  
+  .icon-weixin:before {
+    content: "\e662";
+    color: #289706;
+  }
+  
+  .icon-chazhao:before {
+    content: "\e60d";
+    color: #f1950a;
+  }
+  
+  .icon-youxiang:before {
+    content: "\e600";
+    color: #2a15e6;
+  }
+  
+  .icon-qq-icon:before {
+    content: "\e61a";
+    color: #e72401;
+  }
+  
+  .icon-icon-:before {
+    content: "\e6b1";
+    color: #bb10dd;
+  }
+  
+  .icon-biaoqian:before {
+    content: "\e610";
+    color: #81d413;
+  }
+
+
+/* 目录隐藏按钮颜色 */
+
+#toggle-sidebar {
+    color: #00c4b6 !important;
+}
+
+/* 博主昵称颜色 */
+.author-info__name {
+  color: #2d0edd;
+}
+
+
+
+/* a标签默认颜色 */
+
+#article-container a {
+  color: #00c4b6;
+  text-decoration: none;
+}
+
+/* 鼠标悬停时的颜色 */
+
+#article-container a:hover {
+  color: #e58a8a;
+  text-decoration: none;
+}
+/*a标签颜色*/
+a {
+  color: #00c4b6;
+}
+
+
+
+
+/* 首页中间打字效果上方 */
+#page-header #site_title {
+  color: #0fb7e0;
+}
+/* 顶部导航栏 */
+#nav a {
+  color: #f9f2f4;
+}
+
+
+
+/*页脚a标签字体颜色*/
+#footer-wrap a {
+  color: #00c4b6;
+}
+
+/*页脚自定义字段字体颜色*/
+/* 也就是配置文件里的footer_custom_text */
+.footer_custom_text {
+  color: #313600;
+}

@@ -1,0 +1,328 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Markdown语法 | CPUNCHLINE</title><meta name="keywords" content="Markdown"><meta name="author" content="CPUNCHLINE"><meta name="copyright" content="CPUNCHLINE"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><meta name="description" content="Markdown 是一种轻量级标记语言，能将文本换成有效的XHTML(或者HTML)文档，它的目标是实现易读易写，成为一种适用于网络的书写语言。本文主要讲述Markdown 基本语法。 标题要创建标题，请在单词或短语前面添加井号 (#) 。井号的数量代表了标题的级别。 123456# 一级标题## 二级标题### 三级标题#### 四级标题##### 五级标题###### 六级标题  渲染效果如下">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Markdown语法">
+<meta property="og:url" content="https://www.cpunchline.gitee.io/2020/08/21/Markdown%E8%AF%AD%E6%B3%95/index.html">
+<meta property="og:site_name" content="CPUNCHLINE">
+<meta property="og:description" content="Markdown 是一种轻量级标记语言，能将文本换成有效的XHTML(或者HTML)文档，它的目标是实现易读易写，成为一种适用于网络的书写语言。本文主要讲述Markdown 基本语法。 标题要创建标题，请在单词或短语前面添加井号 (#) 。井号的数量代表了标题的级别。 123456# 一级标题## 二级标题### 三级标题#### 四级标题##### 五级标题###### 六级标题  渲染效果如下">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://www.helloimg.com/images/2020/09/09/oxxw2964719e1d7771be94.jpg">
+<meta property="article:published_time" content="2020-08-21T07:10:38.000Z">
+<meta property="article:modified_time" content="2020-10-03T06:13:00.826Z">
+<meta property="article:author" content="CPUNCHLINE">
+<meta property="article:tag" content="Markdown">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://www.helloimg.com/images/2020/09/09/oxxw2964719e1d7771be94.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://www.cpunchline.gitee.io/2020/08/21/Markdown%E8%AF%AD%E6%B3%95/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  hexoversion: '5.2.0',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  ClickShowText: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  justifiedGallery: {
+    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+};
+
+var saveToLocal = {
+  set: function setWithExpiry(key, value, ttl) {
+    const now = new Date()
+    const expiryDay = ttl * 86400000
+    const item = {
+      value: value,
+      expiry: now.getTime() + expiryDay,
+    }
+    localStorage.setItem(key, JSON.stringify(item))
+  },
+
+  get: function getWithExpiry(key) {
+    const itemStr = localStorage.getItem(key)
+
+    if (!itemStr) {
+      return undefined
+    }
+    const item = JSON.parse(itemStr)
+    const now = new Date()
+
+    if (now.getTime() > item.expiry) {
+      localStorage.removeItem(key)
+      return undefined
+    }
+    return item.value
+  }
+}</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isSidebar: true,
+  postUpdate: '2020-10-03 14:13:00'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(function () {
+  window.activateDarkMode = function () {
+    document.documentElement.setAttribute('data-theme', 'dark')
+    if (document.querySelector('meta[name="theme-color"]') !== null) {
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+    }
+  }
+  window.activateLightMode = function () {
+    document.documentElement.setAttribute('data-theme', 'light')
+    if (document.querySelector('meta[name="theme-color"]') !== null) {
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+    }
+  }
+
+  const autoChangeMode = 'false'
+  const t = saveToLocal.get('theme')
+  if (autoChangeMode === '1') {
+    const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+    const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+    const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+    const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+    if (t === undefined) {
+      if (isLightMode) activateLightMode()
+      else if (isDarkMode) activateDarkMode()
+      else if (isNotSpecified || hasNoSupport) {
+        const now = new Date()
+        const hour = now.getHours()
+        const isNight = hour <= 6 || hour >= 18
+        isNight ? activateDarkMode() : activateLightMode()
+      }
+      window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+        if (saveToLocal.get('theme') === undefined) {
+          e.matches ? activateDarkMode() : activateLightMode()
+        }
+      })
+    } else if (t === 'light') activateLightMode()
+    else activateDarkMode()
+  } else if (autoChangeMode === '2') {
+    const now = new Date()
+    const hour = now.getHours()
+    const isNight = hour <= 6 || hour >= 18
+    if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+    else if (t === 'light') activateLightMode()
+    else activateDarkMode()
+  } else {
+    if (t === 'dark') activateDarkMode()
+    else if (t === 'light') activateLightMode()
+  }
+})()</script><link rel="stylesheet" href="/css/mycss.css"><meta name="generator" content="Hexo 5.2.0"></head><body><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="https://www.helloimg.com/images/2020/09/25/avatare7ad3c0df70364cb.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">1</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">1</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">1</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw iconfont icon-shouye1"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw iconfont icon-liebiao"></i><span> 找文章</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/archives/"><i class="fa-fw iconfont icon-icon-"></i><span> 时间轴</span></a></li><li><a class="site-page" href="/tags/"><i class="fa-fw iconfont icon-biaoqian"></i><span> 标签</span></a></li><li><a class="site-page" href="/categories/"><i class="fa-fw iconfont icon-fenlei"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw iconfont icon-lianjie"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw iconfont icon-guanyu1"></i><span> 关于我</span></a></div></div></div></div><div id="body-wrap"><div id="sidebar"><i class="fas fa-arrow-right" id="toggle-sidebar"></i><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A0%87%E9%A2%98"><span class="toc-text">标题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%B2%97%E4%BD%93"><span class="toc-text">粗体</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%9C%E4%BD%93"><span class="toc-text">斜体</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%B2%97%E6%96%9C%E4%BD%93"><span class="toc-text">粗斜体</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9D%97%E5%BC%95%E7%94%A8"><span class="toc-text">块引用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%89%E5%BA%8F%E5%88%97%E8%A1%A8"><span class="toc-text">有序列表</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%97%A0%E5%BA%8F%E5%88%97%E8%A1%A8"><span class="toc-text">无序列表</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81"><span class="toc-text">代码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81%E5%9D%97"><span class="toc-text">代码块</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%86%E9%9A%94%E7%BA%BF"><span class="toc-text">分隔线</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%93%BE%E6%8E%A5"><span class="toc-text">链接</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%BE%E7%89%87"><span class="toc-text">图片</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BD%AC%E4%B9%89%E5%AD%97%E7%AC%A6"><span class="toc-text">转义字符</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%96%84%E7%94%A8-HTML"><span class="toc-text">善用 HTML</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E5%AD%97%E9%A2%9C%E8%89%B2"><span class="toc-text">文字颜色</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E5%AD%97%E5%A4%A7%E5%B0%8F"><span class="toc-text">文字大小</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E5%AD%97%E4%BD%8D%E7%BD%AE"><span class="toc-text">文字位置</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99"><span class="toc-text">参考资料</span></a></li></ol></div></div></div><header class="post-bg" id="page-header" style="background-image: url(https://www.helloimg.com/images/2020/09/09/oxxw2964719e1d7771be94.jpg)"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">CPUNCHLINE</a></span><span id="menus"><div id="search_button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw iconfont icon-shouye1"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw iconfont icon-liebiao"></i><span> 找文章</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/archives/"><i class="fa-fw iconfont icon-icon-"></i><span> 时间轴</span></a></li><li><a class="site-page" href="/tags/"><i class="fa-fw iconfont icon-biaoqian"></i><span> 标签</span></a></li><li><a class="site-page" href="/categories/"><i class="fa-fw iconfont icon-fenlei"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw iconfont icon-lianjie"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw iconfont icon-guanyu1"></i><span> 关于我</span></a></div></div><span class="close" id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="post-info"><div id="post-title"><div class="posttitle">Markdown语法</div></div><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-08-21T07:10:38.000Z" title="发表于 2020-08-21 15:10:38">2020-08-21</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2020-10-03T06:13:00.826Z" title="更新于 2020-10-03 14:13:00">2020-10-03</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%8D%9A%E5%AE%A2/">博客</a></span></div><div class="meta-secondline"> <span class="post-meta-separator">|</span><span class="post-meta-pv-cv"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout_post" id="content-inner"><article id="post"><div class="post-content" id="article-container"><p>Markdown 是一种轻量级标记语言，能将文本换成有效的XHTML(或者HTML)文档，它的目标是实现易读易写，成为一种适用于网络的书写语言。本文主要讲述Markdown 基本语法。</p>
+<h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><p>要创建标题，请在单词或短语前面添加井号 (<code>#</code>) 。井号的数量代表了标题的级别。</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="section"># 一级标题</span></span><br><span class="line"><span class="section">## 二级标题</span></span><br><span class="line"><span class="section">### 三级标题</span></span><br><span class="line"><span class="section">#### 四级标题</span></span><br><span class="line"><span class="section">##### 五级标题</span></span><br><span class="line"><span class="section">###### 六级标题</span></span><br></pre></td></tr></table></figure>
+
+<p>渲染效果如下：</p>
+<p><img src="//p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3568665c5b7148d48ef722db8b5b7f13~tplv-k3u1fbpfcp-zoom-1.image" alt="博客标题"></p>
+<h2 id="粗体"><a href="#粗体" class="headerlink" title="粗体"></a>粗体</h2><table>
+<thead>
+<tr>
+<th>Markdown</th>
+<th>渲染效果</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code> **粗体**</code></td>
+<td><strong>粗体</strong></td>
+</tr>
+<tr>
+<td><code> __粗体__</code></td>
+<td><strong>粗体</strong></td>
+</tr>
+<tr>
+<td><code>我是**粗体**字</code></td>
+<td>我是<strong>粗体</strong>字</td>
+</tr>
+</tbody></table>
+<h2 id="斜体"><a href="#斜体" class="headerlink" title="斜体"></a>斜体</h2><table>
+<thead>
+<tr>
+<th>Markdown</th>
+<th>渲染效果</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code> *粗体*</code></td>
+<td><em>粗体</em></td>
+</tr>
+<tr>
+<td><code> _斜体_</code></td>
+<td><em>粗体</em></td>
+</tr>
+<tr>
+<td><code>我是*斜体*字</code></td>
+<td>我是<em>粗体</em>字</td>
+</tr>
+</tbody></table>
+<h2 id="粗斜体"><a href="#粗斜体" class="headerlink" title="粗斜体"></a>粗斜体</h2><table>
+<thead>
+<tr>
+<th>Markdown</th>
+<th>渲染效果</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code> ***粗斜体***</code></td>
+<td><strong><em>粗斜体</em></strong></td>
+</tr>
+<tr>
+<td><code> ___粗斜体___</code></td>
+<td><strong><em>粗斜体</em></strong></td>
+</tr>
+<tr>
+<td><code>我是***粗斜体***字</code></td>
+<td>我是**<em>粗斜体**</em>字</td>
+</tr>
+</tbody></table>
+<h2 id="块引用"><a href="#块引用" class="headerlink" title="块引用"></a>块引用</h2><p>要创建块引用，请在段落前添加一个 <code>&gt;</code> 符号。</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="quote">&gt; 块引用示例</span></span><br></pre></td></tr></table></figure>
+
+<p>渲染效果如下所示：</p>
+<blockquote>
+<p>块引用示例</p>
+</blockquote>
+<h2 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h2><p>要创建有序列表，请在每个列表项前添加数字并紧跟一个英文句点。数字不必按数学顺序排列，但是列表应当以数字 1 起始。</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">1.</span> 表项1</span><br><span class="line"><span class="bullet">2.</span> 表项2</span><br><span class="line"><span class="bullet">3.</span> 表项3</span><br><span class="line"><span class="bullet">    1.</span> 表项(1)</span><br><span class="line"><span class="bullet">    2.</span> 表项(2)</span><br><span class="line"><span class="bullet">4.</span> 表项4</span><br></pre></td></tr></table></figure>
+
+<p>渲染效果如下：</p>
+<ol>
+<li>表项1</li>
+<li>表项2</li>
+<li>表项3<ol>
+<li>表项(1)</li>
+<li>表项(2)</li>
+</ol>
+</li>
+<li>表项4</li>
+</ol>
+<h2 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h2><p>要创建无序列表，请在每个列表项前面添加破折号 (<code>-</code>)、星号 (<code>*</code>) 或加号 (<code>+</code>) 。缩进一个或多个列表项可创建嵌套列表。</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">-</span> 表项</span><br><span class="line"><span class="bullet">-</span> 表项</span><br><span class="line"><span class="bullet">-</span> 表项</span><br><span class="line"><span class="bullet">    -</span> 内表项</span><br><span class="line"><span class="bullet">    -</span> 内表项</span><br><span class="line"><span class="bullet">-</span> 表项</span><br></pre></td></tr></table></figure>
+
+<p>渲染效果如下：</p>
+<ul>
+<li>表项</li>
+<li>表项</li>
+<li>表项<ul>
+<li>内表项</li>
+<li>内表项</li>
+</ul>
+</li>
+<li>表项</li>
+</ul>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><p>要将单词或短语表示为代码，请将其包裹在反引号 (```) 中。</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">开始讲<span class="code">`printf()`</span> 函数</span><br></pre></td></tr></table></figure>
+
+<p>渲染效果如下：</p>
+<p>开始讲<code>printf()</code> 函数</p>
+<h2 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h2><p>要创建代码块，请将代码块的每一行缩进至少四个空格或一个制表符。</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;Hello world!\n&quot;</span>);</span><br><span class="line">	system(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>渲染效果如下：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;Hello world!\n&quot;</span>);</span><br><span class="line">	system(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="分隔线"><a href="#分隔线" class="headerlink" title="分隔线"></a>分隔线</h2><p>要创建分隔线，请在单独一行上使用三个或多个星号 (<code>***</code>)、破折号 (<code>---</code>) 或下划线 (<code>___</code>) ，并且不能包含其他内容。为了兼容性，请在分隔线的前后均添加空白行。</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="strong">**<span class="emphasis">*</span></span></span><br><span class="line"><span class="strong"><span class="emphasis"></span></span></span><br><span class="line"><span class="strong"><span class="emphasis">---</span></span></span><br><span class="line"><span class="strong"><span class="emphasis"></span></span></span><br><span class="line"><span class="strong"><span class="emphasis"><span class="strong">____</span><span class="strong">____</span><span class="strong">____</span><span class="strong">____</span>_</span></span></span><br></pre></td></tr></table></figure>
+
+<p>以上三个分隔线的渲染效果看起来都一样：</p>
+<hr>
+<hr>
+<hr>
+<h2 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[<span class="string">朋友的博客</span>](<span class="link">https://n0usec.top/</span>)</span><br><span class="line">添加提示信息：</span><br><span class="line">[<span class="string">朋友的博客</span>](<span class="link">https://n0usec.top/ &quot;NOus&#x27;s Blog&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<p>渲染效果如下：<br><a target="_blank" rel="noopener" href="https://n0usec.top/">朋友的博客</a><br>添加提示信息：<br><a target="_blank" rel="noopener" href="https://n0usec.top/" title="NOus&#39;s Blog">朋友的博客</a></p>
+<h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">![<span class="string">颜色</span>](<span class="link">//p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/27b89daa44274b7ebd5005c836d22c81~tplv-k3u1fbpfcp-zoom-1.image</span>)</span><br><span class="line">添加提示信息：</span><br><span class="line">![<span class="string">颜色</span>](<span class="link">//p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/82b5fafec1d745ef96edaa4e818ffd90~tplv-k3u1fbpfcp-zoom-1.image &quot;颜色&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<p>渲染效果如下：</p>
+<p><img src="//p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/155fe3d4db8743a4859f711addd9a555~tplv-k3u1fbpfcp-zoom-1.image" alt="颜色"><br>添加提示信息(即图片名)：<br><img src="//p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/658bad386c784a49961f1a7913971f87~tplv-k3u1fbpfcp-zoom-1.image" alt="颜色" title="颜色"></p>
+<h2 id="转义字符"><a href="#转义字符" class="headerlink" title="转义字符"></a>转义字符</h2><p>要显示原本用于格式化 Markdown 文档的字符，请在字符前面添加反斜杠字符 (<code>\</code>) 。</p>
+<h2 id="善用-HTML"><a href="#善用-HTML" class="headerlink" title="善用 HTML"></a>善用 HTML</h2><p>我们可以在 Markdown 中插入一些简单的 HTML 代码或 CSS 片段来获得更多扩展，使得文章内容更具有多样性。以下演示几个简单功能。</p>
+<h3 id="文字颜色"><a href="#文字颜色" class="headerlink" title="文字颜色"></a>文字颜色</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">span</span>  <span class="attr">style</span>=<span class="string">&quot;color: #519D9E; &quot;</span>&gt;</span>#519D9E颜色演示<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>渲染效果如下：<span  style="color: #519D9E; ">#519D9E颜色演示</span></p>
+<h3 id="文字大小"><a href="#文字大小" class="headerlink" title="文字大小"></a>文字大小</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">span</span>  <span class="attr">style</span>=<span class="string">&quot;font-size:0.7em;&quot;</span>&gt;</span>0.7em 文字大小演示<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>渲染效果如下：<span  style="font-size:0.7em;">0.7em 文字大小演示</span></p>
+<h3 id="文字位置"><a href="#文字位置" class="headerlink" title="文字位置"></a>文字位置</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">&quot;text-align:center&quot;</span>&gt;</span>内容居中演示<span class="tag">&lt;/<span class="name">p</span>&gt;</span> </span><br><span class="line"># 可以修改 text-align 参数来设置文字位置。</span><br></pre></td></tr></table></figure>
+
+<p>渲染效果如下：</p>
+<p style="text-align:center">内容居中演示</p> 
+
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ol>
+<li><a target="_blank" rel="noopener" href="https://www.markdown.xyz/">Markdown 指南中文版</a></li>
+<li><a target="_blank" rel="noopener" href="https://hexo.fluid-dev.com/docs">Hexo Fluid 用户手册</a></li>
+</ol>
+</div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Markdown/">Markdown</a></div><div class="post_share"><div class="social-share" data-image="https://www.helloimg.com/images/2020/09/09/oxxw2964719e1d7771be94.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></article></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 By CPUNCHLINE</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">热爱可抵岁月漫长！</div></div></footer></div><section id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></section><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a target="_blank" rel="noopener" href="https://github.com/wzpan/hexo-generator-search" style="color:#49B1F5;">hexo-generator-search</a>
+ <span>提供支持</span></div></div></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div><div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>function loadValine () {
+  function initValine () {
+    const initData = {
+      el: '#vcomment',
+      master:'6e9bf295330cce0cb478b8e2ca2d1914',
+      friends:'',
+      appId: '3eLBNLWtKnTJRi1uQq2W8AE9-gzGzoHsz',
+      appKey: '9dk8nME7jS7h1bBDMna7TMQJ',
+      placeholder: '建议使用QQ邮箱，评论头像采用QQ头像',
+      avatar: 'monsterid',
+      meta: 'nick,mail,link'.split(','),
+      pageSize: '10',
+      lang: 'zh-CN',
+      recordIP: false,
+      serverURLs: '',
+      emojiCDN: '',
+      emojiMaps: "",
+      enableQQ: false,
+      path: window.location.pathname,
+    }
+
+    if (true) { 
+      initData.requiredFields= ('nick,mail'.split(','))
+    }
+
+    const valine = new Valine(initData)
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else $.getScript('https://cdn.jsdelivr.net/gh/lete114/CDN2/js/Valine-Lete3.2.js', initValine)
+}
+
+if ('Valine' === 'Valine' || !false) {
+  if (false) btf.loadComment(document.querySelector('#vcomment'),loadValine)
+  else setTimeout(() => loadValine(), 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script data-pjax src="/js/myjs.js"></script><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-nest.min.js"></script></div></body></html>
